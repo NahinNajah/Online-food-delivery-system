@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="food_delivery_system.UserTypeController">
+   <children>
+      <Label layoutX="228.0" layoutY="27.0" prefHeight="18.0" prefWidth="101.0" text="User Type List" />
+      <Button fx:id="delivery" layoutX="108.0" layoutY="101.0" mnemonicParsing="false" onAction="#Delivery" prefHeight="26.0" prefWidth="191.0" text="Delivery person" />
+      <Button fx:id="Accountant" layoutX="108.0" layoutY="134.0" mnemonicParsing="false" onAction="#Accountant" prefHeight="26.0" prefWidth="191.0" text="Accountant" />
+      <Button fx:id="HelpManager" layoutX="108.0" layoutY="167.0" mnemonicParsing="false" onAction="#HelpandSupportManager" prefHeight="26.0" prefWidth="191.0" text=" Help and Support Manager" />
+      <Button fx:id="Restaurant" layoutX="108.0" layoutY="200.0" mnemonicParsing="false" onAction="#Restaurant" prefHeight="26.0" prefWidth="191.0" text="Restaurant Manager" />
+      <Button fx:id="HR" layoutX="108.0" layoutY="233.0" mnemonicParsing="false" onAction="#HR" prefHeight="26.0" prefWidth="191.0" text="HR Manager " />
+      <Button fx:id="Office" layoutX="108.0" layoutY="265.0" mnemonicParsing="false" onAction="#Office" prefHeight="26.0" prefWidth="191.0" text="Office Assistant " />
+      <Button fx:id="customerButton" layoutX="108.0" layoutY="66.0" mnemonicParsing="false" onAction="#CustomerButtonHandler" prefHeight="26.0" prefWidth="191.0" text="Customer" />
+      <Button fx:id="Return" layoutX="425.0" layoutY="265.0" mnemonicParsing="false" onAction="#Return" prefHeight="26.0" prefWidth="112.0" text="Return" />
+   </children>
+</AnchorPane>

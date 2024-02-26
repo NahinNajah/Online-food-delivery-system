@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food_delivery_system.CustomerSceneController">
+   <left>
+      <VBox prefHeight="550.0" prefWidth="163.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="169.0" prefWidth="154.0">
+               <children>
+                  <ImageView fitHeight="81.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../New%20folder/icons8-person-96.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Welcome !">
+                     <font>
+                        <Font name="SansSerif Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="36.0" prefWidth="143.0" spacing="2.0" style="-fx-background-color: #e8e4ff;">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../New%20folder/icons8-restaurant-building-48.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#GoToReviewScene" prefHeight="28.0" prefWidth="101.0" style="-fx-background-radius: 6; -fx-background-color: #0790eb;" text=" Review" textFill="WHITE">
+                           <font>
+                              <Font name="SansSerif Bold" size="13.0" />
+                           </font></Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="35.0" prefWidth="163.0" style="-fx-background-color: #e8e4ff;">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../New%20folder/icons8-purchase-order-64.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#GoToOrderTrackScene" prefHeight="28.0" prefWidth="101.0" style="-fx-background-radius: 6; -fx-background-color: #0790eb;" text="Track Order" textFill="WHITE">
+                           <font>
+                              <Font name="SansSerif Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="30.0" layoutY="10.0" prefHeight="37.0" prefWidth="143.0" spacing="2.0" style="-fx-background-color: #e8e4ff;">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../New%20folder/icons8-technical-support-96.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#GoToHelp_SupportScene" prefHeight="28.0" prefWidth="101.0" style="-fx-background-radius: 6; -fx-background-color: #0790eb;" text="Help &amp; support" textFill="WHITE">
+                           <font>
+                              <Font name="SansSerif Bold" size="11.0" />
+                           </font></Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="30.0" layoutY="10.0" prefHeight="37.0" prefWidth="143.0" spacing="2.0" style="-fx-background-color: #e8e4ff;">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../New%20folder/icons8-complaint-50.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#GoToComplainScene" prefHeight="28.0" prefWidth="102.0" style="-fx-background-radius: 6; -fx-background-color: #0790eb;" text="Complain" textFill="WHITE">
+                           <font>
+                              <Font name="SansSerif Regular" size="12.0" />
+                           </font></Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="44.0" prefWidth="143.0" spacing="5.0" style="-fx-background-color: #e8e4ff;">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../New%20folder/icons8-logout-rounded-down-64.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#GoBackToLoginScene" prefHeight="35.0" prefWidth="77.0" style="-fx-background-radius: 6; -fx-background-color: #0790eb;" text="Logout" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="577.0" prefWidth="524.0" style="-fx-background-color: #e8e4ff;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox prefHeight="47.0" prefWidth="409.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../New%20folder/icons8-search-40.png" />
+                     </image>
+                  </ImageView>
+                  <TextField prefHeight="26.0" prefWidth="301.0" promptText="Search for Restuarant" />
+                  <ImageView fitHeight="33.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../New%20folder/icons8-notification-25.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="131.0" prefWidth="406.0" spacing="20.0">
+               <children>
+                  <Pane prefHeight="144.0" prefWidth="141.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="66.0" fitWidth="62.0" layoutX="21.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../New%20folder/pizza-slice.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="21.0" layoutY="83.0" prefHeight="20.0" prefWidth="78.0" text="pizza">
+                           <font>
+                              <Font name="Forte" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="109.0" text="300 Resturant" textFill="#d6d0d0">
+                           <font>
+                              <Font name="SansSerif Regular" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="144.0" prefWidth="141.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="66.0" fitWidth="62.0" layoutX="21.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../New%20folder/burger.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="21.0" layoutY="83.0" prefHeight="20.0" prefWidth="78.0" text="Burger">
+                           <font>
+                              <Font name="Forte" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="109.0" text="500 Resturant" textFill="#d6d0d0">
+                           <font>
+                              <Font name="SansSerif Regular" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="151.0" layoutY="10.0" prefHeight="144.0" prefWidth="141.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="86.0" fitWidth="98.0" layoutX="21.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../New%20folder/icons8-spaghetti-96.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="21.0" layoutY="83.0" prefHeight="20.0" prefWidth="78.0" text="Pasta">
+                           <font>
+                              <Font name="Forte" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="109.0" text="300 Resturant" textFill="#d6d0d0">
+                           <font>
+                              <Font name="SansSerif Regular" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="332.0" layoutY="10.0" prefHeight="144.0" prefWidth="141.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="66.0" fitWidth="62.0" layoutX="21.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../New%20folder/icons8-curry-96.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="21.0" layoutY="83.0" prefHeight="25.0" prefWidth="92.0" text="Chineese">
+                           <font>
+                              <Font name="Forte" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="109.0" text="150 Resturant" textFill="#d6d0d0">
+                           <font>
+                              <Font name="SansSerif Regular" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Label prefHeight="25.0" prefWidth="267.0" text="What is today's food selection?" textFill="#8d4646">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="SansSerif Bold" size="16.0" />
+               </font>
+            </Label>
+            <ScrollPane prefHeight="343.0" prefWidth="593.0" style="-fx-background-color: #e8e4ff;">
+               <content>
+                  <HBox prefHeight="310.0" prefWidth="1203.0" spacing="10.0">
+                     <children>
+                        <Pane prefHeight="276.0" prefWidth="201.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../New%20folder/burger.png" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="16.0" layoutY="237.0" mnemonicParsing="false" onAction="#GoToResturantOneScene" prefHeight="34.0" prefWidth="176.0" text="Resturant One" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="20.0" layoutY="20.0" prefHeight="276.0" prefWidth="201.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../New%20folder/burger.png" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="16.0" layoutY="237.0" mnemonicParsing="false" onAction="#GoToResturantTwoScene" prefHeight="34.0" prefWidth="176.0" text="Resturant Two" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="20.0" layoutY="20.0" prefHeight="276.0" prefWidth="201.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../New%20folder/burger.png" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="16.0" layoutY="237.0" mnemonicParsing="false" onAction="#GoToResturantThreeScene" prefHeight="33.0" prefWidth="176.0" text="Resturant Three" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="20.0" layoutY="20.0" prefHeight="276.0" prefWidth="201.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../New%20folder/burger.png" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="16.0" layoutY="237.0" mnemonicParsing="false" onAction="#GoToResturantFourScene" prefHeight="33.0" prefWidth="176.0" text="Resturant Four" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="20.0" layoutY="20.0" prefHeight="276.0" prefWidth="201.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../New%20folder/burger.png" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="16.0" layoutY="237.0" mnemonicParsing="false" onAction="#GoToResturantFiveScene" prefHeight="25.0" prefWidth="176.0" text="Resturant Five" />
+                           </children>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </content>
+               <VBox.margin>
+                  <Insets left="10.0" right="20.0" />
+               </VBox.margin>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
